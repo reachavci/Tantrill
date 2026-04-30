@@ -480,17 +480,32 @@
     text-align: center;
     position: relative;
     border-bottom: none;
+    overflow: hidden;
+  }
+
+  .cta-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .cta-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.2) saturate(0.6) contrast(1.2);
   }
 
   .cta-section::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center, rgba(255,255,255,0.02) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 70%);
     pointer-events: none;
+    z-index: 1;
   }
 
-  .cta-section .section-label { margin-bottom: 1.5rem; }
+  .cta-section .section-label { margin-bottom: 1.5rem; position: relative; z-index: 2; }
 
   .cta-title {
     font-family: 'Inter', sans-serif;
@@ -499,6 +514,8 @@
     letter-spacing: -0.03em;
     line-height: 1.1;
     margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
   }
 
   .cta-email {
@@ -510,6 +527,8 @@
     padding-bottom: 0.3rem;
     transition: border-color 0.3s;
     font-weight: 300;
+    position: relative;
+    z-index: 2;
   }
 
   .cta-email:hover { border-color: var(--white); }
@@ -520,6 +539,8 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--gray);
+    position: relative;
+    z-index: 2;
   }
 
   /* ======================== FOOTER ======================== */
@@ -676,22 +697,22 @@
   </div>
   <div class="work-grid reveal">
     <div class="work-item">
-      <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=900&q=80" alt="Brand campaign">
+      <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?w=900&q=80" alt="Rocket launch">
       <div class="play-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="white"><polygon points="5,3 17,10 5,17"/></svg></div>
       <div class="work-info"><h3>Brand Campaign</h3><p>Product Launch Film</p></div>
     </div>
     <div class="work-item">
-      <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=900&q=80" alt="Culture film">
+      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900&q=80" alt="CEO telling startup story">
       <div class="play-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="white"><polygon points="5,3 17,10 5,17"/></svg></div>
       <div class="work-info"><h3>Startup Spotlight</h3><p>Company Culture Film</p></div>
     </div>
     <div class="work-item">
-      <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=900&q=80" alt="Aerial work">
+      <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=900&q=80" alt="German forest aerial view">
       <div class="play-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="white"><polygon points="5,3 17,10 5,17"/></svg></div>
       <div class="work-info"><h3>Industrial Aerial</h3><p>Drone Cinematography</p></div>
     </div>
     <div class="work-item">
-      <img src="https://images.unsplash.com/photo-1579566346927-c68383817a25?w=900&q=80" alt="Tech demo">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80" alt="Microchip close-up">
       <div class="play-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="white"><polygon points="5,3 17,10 5,17"/></svg></div>
       <div class="work-info"><h3>Product Demo</h3><p>Tech Video</p></div>
     </div>
@@ -725,6 +746,9 @@
 
 <!-- CTA -->
 <section class="cta-section section" id="contact">
+  <div class="cta-bg">
+    <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1600&q=80" alt="Dark industrial landscape">
+  </div>
   <div class="reveal">
     <div class="section-label">Contact</div>
     <div class="cta-title">Let's make<br>something worth<br>watching.</div>
