@@ -221,39 +221,6 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* ======================== TICKER ======================== */
-  .ticker {
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    padding: 1.2rem 0;
-    overflow: hidden;
-    white-space: nowrap;
-    background: var(--black);
-  }
-
-  .ticker-inner {
-    display: inline-flex;
-    animation: scroll 25s linear infinite;
-  }
-
-  .ticker-item {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.3em;
-    color: var(--gray);
-    margin: 0 3rem;
-  }
-
-  .ticker-item span {
-    color: var(--white);
-    margin-right: 0.3rem;
-  }
-
-  @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
   /* ======================== SECTION LAYOUT ======================== */
   .section {
     padding: 7rem 3rem;
@@ -606,9 +573,9 @@
 <nav id="navbar">
   <a href="#" class="nav-logo">TANTRILL STUDIOS</a>
   <div class="nav-right">
-    <a href="#capabilities">Services</a>
+    <a href="#capabilities">How We Work</a>
     <a href="#work">Work</a>
-    <a href="#process">Process</a>
+    <a href="#process">Timeline</a>
     <a href="#contact" class="nav-cta">Contact</a>
   </div>
 </nav>
@@ -673,8 +640,8 @@
 <section class="section" id="work">
   <div class="section-header reveal">
     <div>
-      <div class="section-label">Selected Work</div>
-      <div class="section-title">Recent projects.</div>
+      <div class="section-label">Services</div>
+      <div class="section-title">What we shoot.</div>
     </div>
   </div>
   <div class="work-grid reveal" style="grid-template-columns: repeat(3, 1fr);">
@@ -713,10 +680,10 @@
 <section class="section" id="process">
   <div class="section-header reveal">
     <div>
-      <div class="section-label">Process</div>
-      <div class="section-title">How it works.</div>
+      <div class="section-label">Timeline</div>
+      <div class="section-title">Four steps. That's it.</div>
     </div>
-    <p class="section-desc">Four steps from first call to final delivery. No complexity, no bloated timelines.</p>
+    <p class="section-desc">From first call to final files. No complexity, no bloated timelines.</p>
   </div>
   <div class="process-list">
     <div class="process-item reveal"><div class="process-num">01</div><div><h3>Brief</h3><p>A 30-minute call. We learn your goals, define the scope, and align on timeline. You walk away with a clear plan.</p></div></div>
@@ -729,7 +696,7 @@
 <!-- CTA -->
 <section class="cta-section section" id="contact">
   <div class="cta-bg">
-    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=80" alt="Aerial lake cinematic drone shot">
+    <img src="cta_background.png" alt="Cinematic aerial landscape">
   </div>
   <div class="reveal">
     <div class="section-label">Contact</div>
